@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  calculator: 
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://nasirhusaain
+      Handler: calc.calc
+      Runtime: python3.8
+      Role: "arn:aws:iam::455908414253:role/lambdaDynamoDBFullAccess"
+
+
+      
